@@ -26,6 +26,8 @@ public class SalesData {
     @Column(nullable = false)
     private LocalDate salesDate;
 
+
+
     @Column(nullable = false)
     private Integer totalOrders;
 

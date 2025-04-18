@@ -11,6 +11,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 @RequestMapping("/api/orders")
 public class OrderController {
 
+
+
+
     @Autowired
     private OrderService orderService;
 
@@ -38,6 +41,9 @@ public class OrderController {
     public void deleteOrder(@PathVariable Integer id) {
         orderService.deleteOrder(id);
     }
+
+
+
 
     // 新增模糊查询方法
     @GetMapping("/search")
